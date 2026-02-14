@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast | Krishak Saarthi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">🌾 Krishak Saarthi</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="auction.html">Auctions</a>
+            <a href="mandi.html">Mandi</a>
+            <a href="weather.html">Weather</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </nav>
+    </div>
+</header>
+
+<!-- WEATHER SECTION -->
+<section class="section">
+    <div class="container">
+
+        <div class="weather-header">
+            <h1>Weather Forecast</h1>
+            <p>Get real-time weather updates for better crop planning.</p>
+        </div>
+
+        <!-- Search Location -->
+        <div class="weather-search">
+            <i data-feather="map-pin"></i>
+            <input type="text" placeholder="Enter village, district or state">
+            <button class="btn-primary">Check Weather</button>
+        </div>
+
+        <!-- Current Weather Card -->
+        <div class="weather-card">
+            <div class="weather-left">
+                <h2>28°C</h2>
+                <p>Partly Cloudy</p>
+                <span>Pune, Maharashtra</span>
+            </div>
+
+            <div class="weather-right">
+                <div><strong>Humidity:</strong> 65%</div>
+                <div><strong>Wind:</strong> 12 km/h</div>
+                <div><strong>Rain Chance:</strong> 20%</div>
+            </div>
+        </div>
+
+        <!-- 5 Day Forecast -->
+        <div class="forecast-grid">
+
+            <div class="forecast-card">
+                <p>Mon</p>
+                <h3>30°C</h3>
+                <span>Sunny</span>
+            </div>
+
+            <div class="forecast-card">
+                <p>Tue</p>
+                <h3>27°C</h3>
+                <span>Cloudy</span>
+            </div>
+
+            <div class="forecast-card">
+                <p>Wed</p>
+                <h3>25°C</h3>
+                <span>Rain</span>
+            </div>
+
+            <div class="forecast-card">
+                <p>Thu</p>
+                <h3>29°C</h3>
+                <span>Sunny</span>
+            </div>
+
+            <div class="forecast-card">
+                <p>Fri</p>
+                <h3>26°C</h3>
+                <span>Light Rain</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <p>© 2026 Krishak Saarthi | Smart Agricultural Marketplace</p>
+    </div>
+</footer>
+
+<script>
+    feather.replace();
+</script>
+
+</body>
+</html>

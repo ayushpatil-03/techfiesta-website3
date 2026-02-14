@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search | Krishak Saarthi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">🌾 Krishak Saarthi</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="auction.html">Auctions</a>
+            <a href="mandi.html">Mandi</a>
+            <a href="search.html">Search</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </nav>
+    </div>
+</header>
+
+<!-- SEARCH HEADER -->
+<section class="section">
+    <div class="container search-header">
+        <h1>Search Marketplace</h1>
+        <p style="color:#555;">Find crops, mandi prices or traders instantly.</p>
+
+        <div class="search-bar">
+            <i data-feather="search"></i>
+            <input type="text" placeholder="Search by crop, state, or keyword...">
+            <button class="btn-primary">Search</button>
+        </div>
+    </div>
+</section>
+
+<!-- FILTER TABS -->
+<section>
+    <div class="container search-tabs">
+        <button class="tab-btn active">All</button>
+        <button class="tab-btn">Auctions</button>
+        <button class="tab-btn">Mandi Prices</button>
+        <button class="tab-btn">Traders</button>
+    </div>
+</section>
+
+<!-- SEARCH RESULTS -->
+<section class="section">
+    <div class="container search-results">
+
+        <div class="result-card">
+            <span class="result-tag">Auction</span>
+            <h3>Wheat - Grade A</h3>
+            <p>500kg available in Maharashtra</p>
+            <span class="result-meta">Base Price: ₹2200/q</span>
+        </div>
+
+        <div class="result-card">
+            <span class="result-tag">Mandi Price</span>
+            <h3>Rice - Punjab</h3>
+            <p>Modal Price: ₹3000/q</p>
+            <span class="result-meta">Updated Today</span>
+        </div>
+
+        <div class="result-card">
+            <span class="result-tag">Trader</span>
+            <h3>AgroTrade Pvt Ltd</h3>
+            <p>Bulk buyer - Maharashtra Region</p>
+            <span class="result-meta">Verified Trader</span>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <p>© 2026 Krishak Saarthi | Digital Agricultural Marketplace</p>
+    </div>
+</footer>
+
+<script>
+    feather.replace()
+
+    // simple tab highlight
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", function() {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+</script>
+
+</body>
+</html>

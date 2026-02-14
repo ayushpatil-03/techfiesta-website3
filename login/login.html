@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Krishak Saarthi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+
+<div class="login-wrapper">
+
+    <div class="login-card">
+
+        <div class="login-header">
+            <h2>Welcome Back</h2>
+            <p>Select your role and login to continue</p>
+        </div>
+
+        <!-- ROLE SELECTOR -->
+        <div class="role-selector">
+            <button class="role-btn active" onclick="selectRole(this)">Farmer</button>
+            <button class="role-btn" onclick="selectRole(this)">Trader</button>
+            <button class="role-btn" onclick="selectRole(this)">Quality Officer</button>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <form class="login-form">
+
+            <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-group">
+                <i data-feather="lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn-primary full-width">
+                Login
+            </button>
+
+        </form>
+
+        <div class="login-footer">
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    feather.replace()
+
+    function selectRole(button) {
+        document.querySelectorAll(".role-btn").forEach(btn => {
+            btn.classList.remove("active");
+        });
+        button.classList.add("active");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mandi Prices | Krishak Saarthi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">🌾 Krishak Saarthi</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="auction.html">Auctions</a>
+            <a href="mandi.html">Mandi</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HEADER -->
+<section class="section">
+    <div class="container">
+        <h1>Mandi Price Information</h1>
+        <p style="color:#555;">Check latest crop prices across different states.</p>
+    </div>
+</section>
+
+<!-- SEARCH FILTER -->
+<section>
+    <div class="container mandi-filter">
+
+        <select>
+            <option>Select State</option>
+            <option>Maharashtra</option>
+            <option>Punjab</option>
+            <option>Karnataka</option>
+            <option>Uttar Pradesh</option>
+        </select>
+
+        <select>
+            <option>Select Crop</option>
+            <option>Wheat</option>
+            <option>Rice</option>
+            <option>Maize</option>
+            <option>Soybean</option>
+        </select>
+
+        <button class="btn-primary">Search</button>
+
+    </div>
+</section>
+
+<!-- PRICE TABLE -->
+<section class="section">
+    <div class="container">
+
+        <div class="table-card">
+
+            <div class="table-header">
+                <h3>Current Market Rates</h3>
+                <span class="update-label">
+                    <i data-feather="refresh-cw"></i> Updated Today
+                </span>
+            </div>
+
+            <table class="mandi-table">
+                <thead>
+                    <tr>
+                        <th>Crop</th>
+                        <th>State</th>
+                        <th>Min Price (₹/q)</th>
+                        <th>Max Price (₹/q)</th>
+                        <th>Modal Price (₹/q)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wheat</td>
+                        <td>Maharashtra</td>
+                        <td>2100</td>
+                        <td>2300</td>
+                        <td>2200</td>
+                    </tr>
+                    <tr>
+                        <td>Rice</td>
+                        <td>Punjab</td>
+                        <td>2800</td>
+                        <td>3200</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Maize</td>
+                        <td>Karnataka</td>
+                        <td>1600</td>
+                        <td>1900</td>
+                        <td>1800</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <p>© 2026 Krishak Saarthi | Digital Agricultural Marketplace</p>
+    </div>
+</footer>
+
+<script>
+    feather.replace()
+</script>
+
+</body>
+</html>

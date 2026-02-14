@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Krishak Saarthi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+
+<div class="login-wrapper">
+
+    <div class="login-card">
+
+        <div class="login-header">
+            <h2>Create Account</h2>
+            <p>Register to start trading on Krishak Saarthi</p>
+        </div>
+
+        <!-- ROLE SELECTOR -->
+        <div class="role-selector">
+            <button type="button" class="role-btn active" onclick="selectRole(this)">Farmer</button>
+            <button type="button" class="role-btn" onclick="selectRole(this)">Trader</button>
+            <button type="button" class="role-btn" onclick="selectRole(this)">Quality Officer</button>
+        </div>
+
+        <!-- REGISTER FORM -->
+        <form class="login-form">
+
+            <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+
+            <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-group">
+                <i data-feather="phone"></i>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+
+            <div class="input-group">
+                <i data-feather="map-pin"></i>
+                <input type="text" placeholder="State / Location" required>
+            </div>
+
+            <div class="input-group">
+                <i data-feather="lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <div class="input-group">
+                <i data-feather="lock"></i>
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+
+            <button type="submit" class="btn-primary full-width">
+                Register
+            </button>
+
+        </form>
+
+        <div class="login-footer">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    feather.replace()
+
+    function selectRole(button) {
+        document.querySelectorAll(".role-btn").forEach(btn => {
+            btn.classList.remove("active");
+        });
+        button.classList.add("active");
+    }
+</script>
+
+</body>
+</html>

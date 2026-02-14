@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auctions | Krishak Saarthi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">🌾 Krishak Saarthi</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="auction.html">Auctions</a>
+            <a href="#">Mandi</a>
+            <a href="#">Weather</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#" class="btn-login">Login</a>
+        </nav>
+    </div>
+</header>
+
+
+<!-- PAGE HEADER -->
+<section class="section">
+    <div class="container">
+        <h1 style="margin-bottom:10px;">Active Crop Auctions</h1>
+        <p style="color:#555;">Browse verified crop listings and place competitive bids.</p>
+    </div>
+</section>
+
+
+<!-- FILTER BAR -->
+<section>
+    <div class="container filter-bar">
+
+        <select>
+            <option>All Crops</option>
+            <option>Wheat</option>
+            <option>Rice</option>
+            <option>Maize</option>
+        </select>
+
+        <select>
+            <option>All Grades</option>
+            <option>Grade A</option>
+            <option>Grade B</option>
+            <option>Grade C</option>
+        </select>
+
+        <input type="text" placeholder="Search by location">
+
+        <button class="btn-primary">Filter</button>
+
+    </div>
+</section>
+
+
+<!-- AUCTION GRID -->
+<section class="section">
+    <div class="container auction-grid">
+
+        <!-- CARD 1 -->
+        <div class="auction-card">
+            <div class="badge grade-a">Grade A</div>
+            <h3>Wheat</h3>
+            <p><strong>Quantity:</strong> 500kg</p>
+            <p><strong>Base Price:</strong> ₹2200/q</p>
+            <p><strong>Location:</strong> Maharashtra</p>
+            <button class="btn-small">Place Bid</button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="auction-card">
+            <div class="badge grade-b">Grade B</div>
+            <h3>Rice</h3>
+            <p><strong>Quantity:</strong> 800kg</p>
+            <p><strong>Base Price:</strong> ₹3000/q</p>
+            <p><strong>Location:</strong> Punjab</p>
+            <button class="btn-small">Place Bid</button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="auction-card">
+            <div class="badge grade-a">Grade A</div>
+            <h3>Maize</h3>
+            <p><strong>Quantity:</strong> 600kg</p>
+            <p><strong>Base Price:</strong> ₹1800/q</p>
+            <p><strong>Location:</strong> Karnataka</p>
+            <button class="btn-small">Place Bid</button>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <div class="container footer-content">
+        <p>© 2026 Krishak Saarthi | Digital Agricultural Marketplace</p>
+    </div>
+</footer>
+
+<script>
+    feather.replace()
+</script>
+
+</body>
+</html>
